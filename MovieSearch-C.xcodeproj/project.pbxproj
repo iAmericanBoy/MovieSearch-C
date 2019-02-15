@@ -13,6 +13,7 @@
 		B60E2C4E22171B8700EAF376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60E2C4C22171B8700EAF376 /* LaunchScreen.storyboard */; };
 		B60E2C5122171B8700EAF376 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C5022171B8700EAF376 /* main.m */; };
 		B60E2C5B22171CE500EAF376 /* DLMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C5A22171CE500EAF376 /* DLMovie.m */; };
+		B60E2C5F2217236000EAF376 /* DLMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C5E2217236000EAF376 /* DLMovieController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B60E2C5022171B8700EAF376 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B60E2C5922171CE400EAF376 /* DLMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLMovie.h; sourceTree = "<group>"; };
 		B60E2C5A22171CE500EAF376 /* DLMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMovie.m; sourceTree = "<group>"; };
+		B60E2C5D2217236000EAF376 /* DLMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLMovieController.h; sourceTree = "<group>"; };
+		B60E2C5E2217236000EAF376 /* DLMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMovieController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				B60E2C4222171B7F00EAF376 /* AppDelegate.m */,
 				B60E2C5C22171D7100EAF376 /* Model */,
 				B60E2C5722171BD100EAF376 /* Views */,
+				B60E2C612217237500EAF376 /* Controller */,
 				B60E2C5822171BEB00EAF376 /* Resources */,
 			);
 			path = "MovieSearch-C";
@@ -93,6 +97,23 @@
 				B60E2C5A22171CE500EAF376 /* DLMovie.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B60E2C602217236600EAF376 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				B60E2C5D2217236000EAF376 /* DLMovieController.h */,
+				B60E2C5E2217236000EAF376 /* DLMovieController.m */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		B60E2C612217237500EAF376 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B60E2C602217236600EAF376 /* ModelController */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +189,7 @@
 				B60E2C5B22171CE500EAF376 /* DLMovie.m in Sources */,
 				B60E2C5122171B8700EAF376 /* main.m in Sources */,
 				B60E2C4322171B7F00EAF376 /* AppDelegate.m in Sources */,
+				B60E2C5F2217236000EAF376 /* DLMovieController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
