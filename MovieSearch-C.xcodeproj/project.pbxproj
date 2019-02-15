@@ -15,6 +15,7 @@
 		B60E2C5B22171CE500EAF376 /* DLMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C5A22171CE500EAF376 /* DLMovie.m */; };
 		B60E2C5F2217236000EAF376 /* DLMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C5E2217236000EAF376 /* DLMovieController.m */; };
 		B60E2C642217298300EAF376 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C632217298300EAF376 /* MovieListViewController.swift */; };
+		B60E2C6722172B3D00EAF376 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C6622172B3D00EAF376 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B60E2C5E2217236000EAF376 /* DLMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMovieController.m; sourceTree = "<group>"; };
 		B60E2C622217298300EAF376 /* MovieSearch-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieSearch-C-Bridging-Header.h"; sourceTree = "<group>"; };
 		B60E2C632217298300EAF376 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		B60E2C6622172B3D00EAF376 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				B60E2C632217298300EAF376 /* MovieListViewController.swift */,
+				B60E2C6622172B3D00EAF376 /* MovieTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				B60E2C5B22171CE500EAF376 /* DLMovie.m in Sources */,
 				B60E2C642217298300EAF376 /* MovieListViewController.swift in Sources */,
+				B60E2C6722172B3D00EAF376 /* MovieTableViewCell.swift in Sources */,
 				B60E2C5122171B8700EAF376 /* main.m in Sources */,
 				B60E2C4322171B7F00EAF376 /* AppDelegate.m in Sources */,
 				B60E2C5F2217236000EAF376 /* DLMovieController.m in Sources */,

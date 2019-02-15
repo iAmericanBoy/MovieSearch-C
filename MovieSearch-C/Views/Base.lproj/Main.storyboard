@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="193" id="sdN-Wc-OCV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="193" id="sdN-Wc-OCV" customClass="MovieTableViewCell" customModule="MovieSearch_C" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="193"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sdN-Wc-OCV" id="RvD-FP-S1n">
@@ -79,6 +79,12 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="VuG-Bi-02d" secondAttribute="bottom" id="bvf-4Z-OSZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="movieImageView" destination="srP-fh-SkW" id="emJ-YG-dfv"/>
+                                            <outlet property="ratingLabel" destination="bqM-Ca-uPF" id="nr0-yt-nD5"/>
+                                            <outlet property="summaryLabel" destination="kER-p0-5OW" id="eHL-Nl-1Ce"/>
+                                            <outlet property="titleLabel" destination="yEJ-CL-vDY" id="1Ah-CP-q8r"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -95,6 +101,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sbv-Aq-chn"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="4jf-kJ-cHa" id="Vvo-Eh-ZUa"/>
+                        <outlet property="tableView" destination="qjG-ub-yds" id="7s9-ud-Ytt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZr-pE-9Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
