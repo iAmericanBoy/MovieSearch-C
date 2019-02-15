@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(instancetype)initWithTitle:(NSString *)title
                     overview:(NSString *)overview
         imagePathURLAsString:(NSString *)urlPath
-                      rating:(float )rating;
+                      rating:(double )rating;
 
 @end
 @interface DLMovie  (JSONConvertable)

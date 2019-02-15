@@ -10,7 +10,7 @@
 
 @implementation DLMovie
 
-- (instancetype)initWithTitle:(NSString *)title overview:(NSString *)overview imagePathURLAsString:(NSString *)urlPath rating:(float)rating
+- (instancetype)initWithTitle:(NSString *)title overview:(NSString *)overview imagePathURLAsString:(NSString *)urlPath rating:(double)rating
 {
     self = [super init];
     if(self) {
@@ -31,12 +31,12 @@
     NSString *title = dictionary[@"title"];
     NSString *overview = dictionary[@"overview"];
     NSString *pathURL = dictionary[@"poster_path"];
-    float rating = [dictionary[@"vote_average"]floatValue];
+    double rating = [dictionary[@"vote_average"] doubleValue];
     
     if (!rating) {
         rating = 0.0;
     }
-    NSLog(@"%@", pathURL);
+    NSLog(@"%f",rating);
     
     return [self initWithTitle:title overview:overview imagePathURLAsString:pathURL rating: rating];
 }

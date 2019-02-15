@@ -25,7 +25,7 @@ class MovieTableViewCell: UITableViewCell {
     //MARK: - Private Functions
     func updateView(){
         titleLabel.text = movie?.title
-        ratingLabel.text = String(format: "%d", movie?.rating ?? 0.0)
+        ratingLabel.text = String(format: "%.2f", movie?.rating ?? 0.0)
         summaryLabel.text = movie?.overview
         movieImageView.image = nil
     }
