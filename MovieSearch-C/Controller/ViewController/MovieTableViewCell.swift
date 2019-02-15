@@ -16,5 +16,17 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var summaryLabel: UILabel!
     
     //MARK: - Properties
+    var movie: DLMovie? {
+        didSet {
+            updateView()
+        }
+    }
     
+    //MARK: - Private Functions
+    func updateView(){
+        titleLabel.text = movie?.title
+        ratingLabel.text = String(format: "%d", movie?.rating ?? 0.0)
+        summaryLabel.text = movie?.overview
+        movieImageView.image = nil
+    }
 }

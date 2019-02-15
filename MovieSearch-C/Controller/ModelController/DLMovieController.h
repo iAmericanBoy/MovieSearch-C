@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DLMovieController : NSObject
 
-+(void)fetchMoviesForSearchTerm:(NSString *)searchTerm completion: (void (^_Nullable) (NSMutableArray<DLMovie *> *_Nullable movies))completion;
++(void)fetchMoviesForSearchTerm:(NSString *)searchTerm completion: (void (^_Nullable) (NSMutableArray<DLMovie *> *movies))completion;
 
 +(void)fetchImageForMovie:(DLMovie *)movie completion: (void (^_Nullable) (UIImage *_Nullable pic))completion;
 

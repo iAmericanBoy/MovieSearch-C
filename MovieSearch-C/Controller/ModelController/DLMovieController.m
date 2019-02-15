@@ -31,7 +31,7 @@ static NSString * const baseImageURlString = @"http://image.tmdb.org/t/p/w500/";
     [[[NSURLSession sharedSession] dataTaskWithURL:searchURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             NSLog(@"There was an Error in %s :%@, %@", __PRETTY_FUNCTION__, error, error.localizedDescription);
-            completion(nil);
+            completion([NSMutableArray<DLMovie *> new]);
             return ;
         }
         
@@ -43,7 +43,7 @@ static NSString * const baseImageURlString = @"http://image.tmdb.org/t/p/w500/";
             NSDictionary *topLevelDictionary = [NSJSONSerialization JSONObjectWithData:data options: 0 error:&error];
             if (!topLevelDictionary) {
                 NSLog(@"error parsing the JSON %@", error);
-                completion(nil);
+                completion([NSMutableArray<DLMovie *> new]);
                 return;
             }
             NSMutableArray *results = topLevelDictionary[@"results"];
@@ -61,7 +61,7 @@ static NSString * const baseImageURlString = @"http://image.tmdb.org/t/p/w500/";
 {
     NSURL *baseURL = [NSURL URLWithString:baseImageURlString];
     
-    [baseURL URLByAppendingPathComponent:movie.imagePathURLAsString];
+    baseURL = [baseURL URLByAppendingPathComponent:movie.imagePathURLAsString];
     NSLog(@"%@",baseURL);
 
     
