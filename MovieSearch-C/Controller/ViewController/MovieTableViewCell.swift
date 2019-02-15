@@ -24,9 +24,15 @@ class MovieTableViewCell: UITableViewCell {
     
     //MARK: - Private Functions
     func updateView(){
-        titleLabel.text = movie?.title
-        ratingLabel.text = String(format: "%.2f", movie?.rating ?? 0.0)
-        summaryLabel.text = movie?.overview
-        movieImageView.image = nil
+        guard let movieNotNil = movie else {return}
+        DLMovieController.fetchImage(for: movieNotNil) { (pic) in
+            DispatchQueue.main.async {
+                self.titleLabel.text = self.movie?.title
+                self.ratingLabel.text = String(format: "%.2f", self.movie?.rating ?? 0.0)
+                self.summaryLabel.text = self.movie?.overview
+                self.movieImageView.image = pic ?? UIImage(named: "love")
+            }
+        }
+
     }
 }
