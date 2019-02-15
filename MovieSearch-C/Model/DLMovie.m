@@ -39,7 +39,6 @@
     if(![pathURL isKindOfClass:[NSString class]]) {
         pathURL = @" ";
     }
-    NSLog(@"%@",pathURL);
     
     return [self initWithTitle:title overview:overview imagePathURLAsString:pathURL rating: rating];
 }

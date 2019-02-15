@@ -19,7 +19,6 @@ class MovieListViewController: UIViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-            
         }
     }
     
@@ -31,6 +30,7 @@ class MovieListViewController: UIViewController {
         searchBar.delegate = self
     }
 }
+
 //MARK: -Extension: TableView
 extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,6 +45,7 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
 }
+
 //MARK: -Extension: SearchBar
 extension MovieListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

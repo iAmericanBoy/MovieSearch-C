@@ -9,6 +9,7 @@
 import UIKit
 
 class MovieTableViewCell: UITableViewCell {
+    
     //MARK: - Outlets
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -33,6 +34,5 @@ class MovieTableViewCell: UITableViewCell {
                 self.movieImageView.image = pic ?? UIImage(named: "love")
             }
         }
-
     }
 }

@@ -35,10 +35,7 @@ static NSString * const baseImageURlString = @"http://image.tmdb.org/t/p/w500/";
             return ;
         }
         
-        if (response) {
-            NSLog(@"%@",response);
-        }
-        
+
         if (data) {
             NSDictionary *topLevelDictionary = [NSJSONSerialization JSONObjectWithData:data options: 0 error:&error];
             if (!topLevelDictionary) {
@@ -71,9 +68,7 @@ static NSString * const baseImageURlString = @"http://image.tmdb.org/t/p/w500/";
             completion(nil);
             return ;
         }
-        if (response) {
-            NSLog(@"%@",response);
-        }
+
         
         if (data) {
             UIImage *moviepic = [[UIImage alloc] initWithData:data scale:1];
