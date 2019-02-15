@@ -12,6 +12,7 @@
 		B60E2C4B22171B8700EAF376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60E2C4A22171B8700EAF376 /* Assets.xcassets */; };
 		B60E2C4E22171B8700EAF376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60E2C4C22171B8700EAF376 /* LaunchScreen.storyboard */; };
 		B60E2C5122171B8700EAF376 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C5022171B8700EAF376 /* main.m */; };
+		B60E2C5B22171CE500EAF376 /* DLMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E2C5A22171CE500EAF376 /* DLMovie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		B60E2C4D22171B8700EAF376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B60E2C4F22171B8700EAF376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B60E2C5022171B8700EAF376 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B60E2C5922171CE400EAF376 /* DLMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLMovie.h; sourceTree = "<group>"; };
+		B60E2C5A22171CE500EAF376 /* DLMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMovie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 			children = (
 				B60E2C4122171B7F00EAF376 /* AppDelegate.h */,
 				B60E2C4222171B7F00EAF376 /* AppDelegate.m */,
+				B60E2C5C22171D7100EAF376 /* Model */,
 				B60E2C5722171BD100EAF376 /* Views */,
 				B60E2C5822171BEB00EAF376 /* Resources */,
 			);
@@ -80,6 +84,15 @@
 				B60E2C5022171B8700EAF376 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B60E2C5C22171D7100EAF376 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B60E2C5922171CE400EAF376 /* DLMovie.h */,
+				B60E2C5A22171CE500EAF376 /* DLMovie.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60E2C5B22171CE500EAF376 /* DLMovie.m in Sources */,
 				B60E2C5122171B8700EAF376 /* main.m in Sources */,
 				B60E2C4322171B7F00EAF376 /* AppDelegate.m in Sources */,
 			);
@@ -297,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6B8ZX28ZW;
-				INFOPLIST_FILE = "MovieSearch-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6B8ZX28ZW;
-				INFOPLIST_FILE = "MovieSearch-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
